@@ -27,7 +27,6 @@
             <li><strong>JavaScript:</strong> Implements the stopwatch functionality, including starting, stopping, resetting, and updating the time display.</li>
         </ul>
         <h2>Screenshots</h2>
-      
         <img src="https://raw.githubusercontent.com/Professorwired/Stop_Watch/main/Screenshot%202024-04-03%20222806.png" alt="Screenshot 1">
         <h2>Contributors</h2>
         <p><a href="https://github.com/alihaiderr">Ali Haider</a> - Creator and main contributor.</p>
