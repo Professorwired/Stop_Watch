@@ -1,36 +1,5 @@
 <!DOCTYPE html>
 <html lang="en"> 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f3f3;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #333;
-        }
-        p {
-            margin-bottom: 20px;
-            line-height: 1.6;
-            color: #666;
-        }
-        img {
-            display: block;
-            margin: 0 auto;
-            max-width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-    </style>
 </head>
 <body>
     <div class="container">
