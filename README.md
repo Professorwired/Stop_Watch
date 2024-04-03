@@ -32,8 +32,6 @@
         <img src="screenshot2.png" alt="Screenshot 2">
         <h2>Contributors</h2>
         <p><a href="https://github.com/alihaiderr">Ali Haider</a> - Creator and main contributor.</p>
-        <h2>License</h2>
-        <p>This project is licensed under the <a href="LICENSE">MIT License</a>. Feel free to use, modify, and distribute it as per the license terms.</p>
     </div>
 </body>
 </html>
