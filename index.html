@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .stop {
+    height: 200px;
+    width: 300px;
+    padding: auto;
+    justify-content: center;
+    background-color: black;
+    text-align: center;
+    padding-top: 100px;
+    color: red;
+    position: absolute;
+    top:20%;
+    left:45%;
+    border-radius: 10px;
+
+
+    
+}
+h1{
+    border: 2px solid red;
+    width: 150px;
+    margin:  auto;
+    
+}
+.btn{
+    position: relative;
+    top: 20px;
+    border: 2px solid red;
+    background-color: black;
+    color:white;
+}
+h1:hover{
+    box-shadow: 2px 6px 20px red ;
+}
+    </style>
+</head>
+<body>
+    <div class="stop">
+        <h1 id="time">00:00:00</h1>
+        <button onclick="startwatch()" class="btn">Start</button>
+        <button onclick="stop()" class="btn">Stop</button>
+        <button onclick="reset()"class="btn">Reset</button>
+    </div>
+
+<script>
+let seconds=0;
+let minutes=0;
+let  hours = 0;
+let display=document.getElementById("time");
+let timer;
+function stopwatch(){
+    seconds++
+    if(seconds>=60){
+       seconds=0;
+        minutes++;
+}
+if (minutes >=60) {
+   hours ++;
+   minutes=0;
+}
+display.textContent=pad(hours) +":"+pad(minutes)+ ":" + pad(seconds);
+};
+function startwatch(){
+timer=setInterval(stopwatch,1000);}
+
+
+function pad(number){
+    return (number<10)? '0'+number: number;
+}
+function stop(){
+    clearInterval(timer);
+}
+function reset(){
+    clearInterval(timer);
+    hours=0;
+    seconds=0;
+    minutes=0;
+display.textContent=pad(hours) +":"+pad(minutes)+ ":" + pad(seconds);
+}
+</script>
+
+
+</body>
+</html>
